@@ -2,3 +2,57 @@
 learn.by/*.db
 learn.by/target
 learn.by/bin
+*.log
+learn.by/*.db
+learn.by/target
+learn.by/bin
+skillbox.ru/java-developer-from-zero-by-skillbox/module2/Booleans/.idea/
+skillbox.ru/java-developer-from-zero-by-skillbox/module2/Booleans/out/
+skillbox.ru/java-developer-from-zero-by-skillbox/module2/Comparison/.idea/
+skillbox.ru/java-developer-from-zero-by-skillbox/module2/Comparison/out/
+skillbox.ru/java-developer-from-zero-by-skillbox/module2/forWhile/.idea/
+skillbox.ru/java-developer-from-zero-by-skillbox/module2/forWhile/out/
+skillbox.ru/java-developer-from-zero-by-skillbox/module2/IncomeCalculator/.idea/
+skillbox.ru/java-developer-from-zero-by-skillbox/module2/IncomeCalculator/out/
+skillbox.ru/java-developer-from-zero-by-skillbox/module2/RoadController/.idea/
+skillbox.ru/java-developer-from-zero-by-skillbox/module2/RoadController/out/
+skillbox.ru/java-developer-from-zero-by-skillbox/module3/airport/.idea/
+skillbox.ru/java-developer-from-zero-by-skillbox/module3/airport/out/
+skillbox.ru/java-developer-from-zero-by-skillbox/module4/Cat_lesson1/.idea/
+skillbox.ru/java-developer-from-zero-by-skillbox/module4/Cat_lesson1/out/
+skillbox.ru/java-developer-from-zero-by-skillbox/module4/Cat_lesson2-7/.idea/
+skillbox.ru/java-developer-from-zero-by-skillbox/module4/Cat_lesson2-7/out/
+skillbox.ru/java-developer-from-zero-by-skillbox/module4/RoadController_lesson6-7/.idea/
+skillbox.ru/java-developer-from-zero-by-skillbox/module4/RoadController_lesson6-7/out/
+skillbox.ru/java-developer-from-zero-by-skillbox/module4/IntegerExperiments/.idea/
+skillbox.ru/java-developer-from-zero-by-skillbox/module4/IntegerExperiments/out/
+skillbox.ru/java-developer-from-zero-by-skillbox/module4/Lesson4.2_MinMax/.idea/
+skillbox.ru/java-developer-from-zero-by-skillbox/module4/Lesson4.2_MinMax/out/
+skillbox.ru/java-developer-from-zero-by-skillbox/module4/lesson4.6_Birthday/.idea/
+skillbox.ru/java-developer-from-zero-by-skillbox/module4/lesson4.6_Birthday/out/
+skillbox.ru/java-developer-from-zero-by-skillbox/module4/lesson4.6_EnglishText/.idea/
+skillbox.ru/java-developer-from-zero-by-skillbox/module4/lesson4.6_EnglishText/out/
+skillbox.ru/java-developer-from-zero-by-skillbox/module4/lesson4.6_PhoneRegEx/.idea/
+skillbox.ru/java-developer-from-zero-by-skillbox/module4/lesson4.6_PhoneRegEx/out/
+skillbox.ru/java-developer-from-zero-by-skillbox/module4/StringExperiments/.idea/
+skillbox.ru/java-developer-from-zero-by-skillbox/module4/StringExperiments/out/
+skillbox.ru/java-developer-from-zero-by-skillbox/module5/CarNumbers/.idea/
+skillbox.ru/java-developer-from-zero-by-skillbox/module5/CarNumbers/out/
+skillbox.ru/java-developer-from-zero-by-skillbox/module5/emailList/.idea/
+skillbox.ru/java-developer-from-zero-by-skillbox/module5/emailList/out/
+skillbox.ru/java-developer-from-zero-by-skillbox/module5/PhoneBookMap/.idea/
+skillbox.ru/java-developer-from-zero-by-skillbox/module5/PhoneBookMap/out/
+skillbox.ru/java-developer-from-zero-by-skillbox/module5/raindow/.idea/
+skillbox.ru/java-developer-from-zero-by-skillbox/module5/raindow/out/
+skillbox.ru/java-developer-from-zero-by-skillbox/module5/Temperature/.idea/
+skillbox.ru/java-developer-from-zero-by-skillbox/module5/Temperature/out/
+skillbox.ru/java-developer-from-zero-by-skillbox/module5/TodoList/.idea/
+skillbox.ru/java-developer-from-zero-by-skillbox/module5/TodoList/out/
+skillbox.ru/java-developer-from-zero-by-skillbox/module5/X/.idea/
+skillbox.ru/java-developer-from-zero-by-skillbox/module5/X/out/
+skillbox.ru/java-developer-from-zero-by-skillbox/module6/6.1 BankAccount/.idea/
+skillbox.ru/java-developer-from-zero-by-skillbox/module6/6.1 BankAccount/out/
+skillbox.ru/java-developer-from-zero-by-skillbox/module6/6.3 BankAccountAndClient/.idea/
+skillbox.ru/java-developer-from-zero-by-skillbox/module6/6.3 BankAccountAndClient/out/
+skillbox.ru/java-developer-from-zero-by-skillbox/module6/6.4 Company/.idea/
+skillbox.ru/java-developer-from-zero-by-skillbox/module6/6.4 Company/out/
