@@ -2,10 +2,6 @@
 learn.by/*.db
 learn.by/target
 learn.by/bin
-*.log
-learn.by/*.db
-learn.by/target
-learn.by/bin
 skillbox.ru/java-developer-from-zero-by-skillbox/module2/Booleans/.idea/
 skillbox.ru/java-developer-from-zero-by-skillbox/module2/Booleans/out/
 skillbox.ru/java-developer-from-zero-by-skillbox/module2/Comparison/.idea/
