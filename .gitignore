@@ -1,0 +1,4 @@
+*.log
+learn.by/*.db
+learn.by/target
+learn.by/bin
