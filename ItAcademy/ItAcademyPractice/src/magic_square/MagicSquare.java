@@ -9,7 +9,7 @@ public class MagicSquare
             int mainDiagonalSum = getMainDiagonalSum( array );
             int sideDiagonalSum = getSideDiagonalSum( array );
 
-            if ( mainDiagonalSum == sideDiagonalSum ) {
+            if ( mainDiagonalSum != sideDiagonalSum ) {
                 throwException();
             }
             return true;
@@ -65,9 +65,9 @@ public class MagicSquare
 
     private static int getSideDiagonalSum( int[][] array ) {
         int sum = 0;
-        int i = array.length - 1;
-        for ( int j = array.length - 1; j > 0; j--  ) {
-            sum += array[ i-- ][ j ];
+        int i = 0;
+        for ( int j = array.length - 1; j >= 0; j--  ) {
+            sum += array[ i++ ][ j ];
         }
         return sum;
     }
