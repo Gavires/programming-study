@@ -29,10 +29,11 @@ public class MagicSquare
                 rowSums[ row ] += array[ row ][ column ];
             }
         }
-        // Check all sums of rows and columns
+        // Put any value from array of sum into variable (all values must be equal same value)
+        int sum = rowSums[0];
         for ( int i = 0; i < array.length; i++ )
         {
-            if ( rowSums[ i ] != columnSums[ i ])
+            if ( rowSums[ i ] != sum && columnSums[ i ] != sum )
             {
                 throwException();
             }
