@@ -1,28 +1,21 @@
 package model.rectangle;
 
-import model.Shape;
 
-public class Square extends Shape {
+public class Square extends Rectangle {
 
-    double firstSide;
 
-    protected Square(String name, double firstSide) {
-        super(name);
-        this.firstSide = firstSide;
+    protected Square(String name, double side) {
+        super(name, side, side);
+        this.firstSide = side;
     }
 
-    public Square(double firstSide) {
-        this("Квадрат", firstSide);
+    public Square(double side) {
+        this("Квадрат", side);
     }
 
     @Override
     protected double getPerimeter() {
         return firstSide * 4;
-    }
-
-    @Override
-    protected double getSquare() {
-        return Math.pow(firstSide, 2);
     }
 
     @Override

@@ -1,12 +1,15 @@
 package model.rectangle;
 
+import model.Shape;
 
-public class Rectangle extends Square {
+public class Rectangle extends Shape {
 
-    private double secondSide;
+    protected double firstSide;
+    protected double secondSide;
 
     protected Rectangle(String name, double firstSide, double secondSide) {
-        super(name, firstSide);
+        super(name);
+        this.firstSide = firstSide;
         this.secondSide = secondSide;
     }
 
