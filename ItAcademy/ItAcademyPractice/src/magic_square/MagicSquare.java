@@ -4,14 +4,8 @@ public class MagicSquare
 {
     public static boolean isMagic( int[][] array ) {
         try {
-            int[] rowSums = getRowSums( array );
-            int[] columnSums = getColumnSums( array );
-            int mainDiagonalSum = getMainDiagonalSum( array );
-            int sideDiagonalSum = getSideDiagonalSum( array );
-
-            if ( mainDiagonalSum != sideDiagonalSum ) {
-                throwException();
-            }
+            checkSumOfDiagonals( array );
+            checkSumOfRowsAndColumns( array );
             return true;
         }
         catch ( NotMagicSquareException e ) {
@@ -20,56 +14,48 @@ public class MagicSquare
         }
     }
 
-    private static int[] getRowSums( int[][] array ) throws NotMagicSquareException {
+    private static void checkSumOfRowsAndColumns( int[][] array ) throws NotMagicSquareException {
         int[] rowSums = new int[ array.length ];
+        int[] columnSums = new int[ array.length ];
+
         for ( int row = 0; row < array.length; row++ )
         {
-            int sum = 0;
-            for ( int value : array[ row ]) {
-                sum += value;
-            }
-            rowSums[ row ] = sum;
+            for ( int column = 0; column < array.length; column++ )
+            {
+                // Accumulate sum of columns
+                columnSums[ column] += array[ row ][ column ];
 
-            if ( row > 0 && rowSums[ row ] != rowSums[ row - 1 ]) {
+                // Accumulate sum of rows
+                rowSums[ row ] += array[ row ][ column ];
+            }
+        }
+        // Check all sums of rows and columns
+        for ( int i = 0; i < array.length; i++ )
+        {
+            if ( rowSums[ i ] != columnSums[ i ])
+            {
                 throwException();
             }
         }
-        return rowSums;
     }
 
-    private static int[] getColumnSums( int[][] array ) throws NotMagicSquareException {
-        int[] columnSums = new int[ array.length ];
-        for ( int i = 0; i < array.length; i++ )
+    private static void checkSumOfDiagonals( int[][] array ) throws NotMagicSquareException {
+        int mainDiagonalSum = 0;
+        int sideDiagonalSum = 0;
+
+        // Accumulate sum of main and side diagonals
+        int sideId = array.length - 1;
+        for ( int mainId = 0; mainId < array.length; mainId++ )
         {
-            int sum = 0;
-            for ( int column = 0; column < array.length; column++ ) {
-                sum += array[ column ][ i ];
-            }
-            columnSums[ i ] = sum;
-
-            if ( i > 0 && columnSums[ i ] != columnSums[ i - 1 ]) {
-               throwException();
-            }
+            mainDiagonalSum += array[ mainId ][ mainId ];
+            sideDiagonalSum += array[ sideId ][ sideId ];
+            sideId--;
         }
-        return columnSums;
-    }
 
-    private static int getMainDiagonalSum( int[][] array ) {
-        int sum = 0;
-        int i = 0;
-        for ( int j = 0; j < array.length; j++ ) {
-            sum += array[ i++ ][ j ];
+        // Check these sums
+        if ( mainDiagonalSum != sideDiagonalSum ) {
+            throwException();
         }
-        return sum;
-    }
-
-    private static int getSideDiagonalSum( int[][] array ) {
-        int sum = 0;
-        int i = 0;
-        for ( int j = array.length - 1; j >= 0; j--  ) {
-            sum += array[ i++ ][ j ];
-        }
-        return sum;
     }
 
     private static void throwException() throws NotMagicSquareException {
