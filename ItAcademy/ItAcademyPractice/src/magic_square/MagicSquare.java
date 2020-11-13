@@ -15,27 +15,26 @@ public class MagicSquare
     }
 
     private static void checkSumOfRowsAndColumns( int[][] array ) throws NotMagicSquareException {
-        int[] rowSums = new int[ array.length ];
-        int[] columnSums = new int[ array.length ];
-
         int magicValue = 0;
         for ( int row = 0; row < array.length; row++ )
         {
+            int columnSum = 0;
+            int rowSum = 0;
             for ( int column = 0; column < array.length; column++ )
             {
                 // Accumulate sum of columns
-                columnSums[ row ] += array[ column ][ row ];
+                columnSum += array[ column ][ row ];
 
                 // Accumulate sum of rows
-                rowSums[ row ] += array[ row ][ column ];
+                rowSum += array[ row ][ column ];
             }
 
             // Put any value from array of sum into variable (all values must be equal same value)
             if ( row == 0 ) {
-                magicValue = rowSums[ row ];
+                magicValue = rowSum;
             }
 
-            if ( columnSums[row] != magicValue || rowSums[ row ] != magicValue ) {
+            if ( columnSum != magicValue || rowSum != magicValue ) {
                 throwException();
             }
         }
