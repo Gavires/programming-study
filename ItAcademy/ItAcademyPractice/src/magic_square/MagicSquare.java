@@ -18,23 +18,24 @@ public class MagicSquare
         int[] rowSums = new int[ array.length ];
         int[] columnSums = new int[ array.length ];
 
+        int magicValue = 0;
         for ( int row = 0; row < array.length; row++ )
         {
             for ( int column = 0; column < array.length; column++ )
             {
                 // Accumulate sum of columns
-                columnSums[ column] += array[ row ][ column ];
+                columnSums[ row ] += array[ column ][ row ];
 
                 // Accumulate sum of rows
                 rowSums[ row ] += array[ row ][ column ];
             }
-        }
-        // Put any value from array of sum into variable (all values must be equal same value)
-        int sum = rowSums[0];
-        for ( int i = 0; i < array.length; i++ )
-        {
-            if ( rowSums[ i ] != sum && columnSums[ i ] != sum )
-            {
+
+            // Put any value from array of sum into variable (all values must be equal same value)
+            if ( row == 0 ) {
+                magicValue = rowSums[ row ];
+            }
+
+            if ( columnSums[row] != magicValue || rowSums[ row ] != magicValue ) {
                 throwException();
             }
         }
